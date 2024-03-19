@@ -1,0 +1,21 @@
+// pythagoras function example
+
+func pythagoras(a: Double, b: Double) -> Double {
+    let input = a * a + b * b
+    let root = sqrt(input)
+    return root
+}
+
+
+
+let c = pythagoras(a: 3, b: 4)
+print(c)
+
+// simplified example of the above code
+
+func pythasgoras(a: Double, b: Double) -> Double {
+    sqrt(a * b + b * b)
+}
+// all one line of code so need for "return" simplified with the temp constants
+
+   
