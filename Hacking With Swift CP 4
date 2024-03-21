@@ -1,0 +1,32 @@
+import SwiftUI
+
+// Integer SQRT of 1 - 10_000. Throws errors and gives SQRT of all numbers
+
+enum RootError: Error {
+    case tooLow, tooHigh, notFound
+}
+
+func squareRoot(of number: Int) throws -> Int {
+    if number  < 1 {
+        throw RootError.tooLow
+    }
+    if number > 10_000 {
+        throw RootError.tooHigh
+    }
+    for i in 1...100 {
+        if i * i == number {
+            return i
+        }
+    }
+    throw RootError.notFound
+    
+}
+
+let number = 7397
+
+do {
+    let root = try squareRoot(of: number)
+    print("The square root of \(number) is \(root).")
+} catch {
+    print("Sorry, there was a problem.")
+}
