@@ -1,0 +1,10 @@
+var a = 8
+var b = 6
+
+var c = a // c = 5 because a = 5 // adding a new variable gives a chance to switch a and b
+a = b
+b = c // now we can change b since we have a third place to store variables in c. without adding the extra variable this would not be possible.
+
+
+print("My favorite number is \(a)!")
+print("The coolest number is \(b)!")
