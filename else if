@@ -1,5 +1,5 @@
 func loveCalculator() {
-    let loveScore = Int.random(in: 0...100
+    let loveScore = Int.random(in: 0...100)
     
     if loveScore == 100 {
         print("Kanye loves Kanye.")
