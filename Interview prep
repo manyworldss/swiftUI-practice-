@@ -61,3 +61,46 @@ func isLeap(year: Int) {
     }
   
 }
+
+
+
+
+
+Create a program that takes a number (Int) as an input and prints the corresponding day of the week using a Switch statement.
+
+e.g. If the input was 5
+
+Then the function should print:
+
+"Friday"
+
+If the input number does not match a day of the week then your program should print "Error".
+
+
+////Don't change this
+var aNumber =  Int(readLine()!)! 
+
+func dayOfTheWeek(day: Int) {
+  
+ switch aNumber {
+     case 5: 
+     print("Friday")
+     case 4:
+     print("Thursday")
+     case 3:
+     print("Wednesday")
+     case 2: 
+     print("Tuesday")
+     case 1: 
+     print("Monday")
+     case 6: 
+     print("Saturday")
+     case 7: 
+     print("Sunday")
+     default:
+     print("Error")
+ }
+  
+  
+  
+}
