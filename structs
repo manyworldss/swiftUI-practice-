@@ -1,0 +1,25 @@
+// structs
+
+struct City {
+    let name = "Metropolis"
+    var citizens = ["Superman","Batman","Barry Allen","Green Lantern"]
+    var resources = ["Plutonium": 1000 ,"Sulfuric Acid": 2000,"Kryptonite": 4000]
+    
+    // method within struct
+    
+    func fortify() {
+        print("Defences increased!")
+    }
+}
+    var myCity = City()
+    
+    print(myCity.citizens)
+    print("\(myCity.name) has \(myCity.resources["Plutonium"]!) pounds of plutonium.")
+    
+    
+    // modifying struct using append
+    
+    myCity.citizens.append("Martian Manhunter")
+    print(myCity.citizens.count)
+   
+myCity.fortify(
