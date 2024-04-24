@@ -1,0 +1,10 @@
+  // functions with outputs, return values, and inputs.
+    
+func greeting3(name: String) -> Bool {
+    if name == "Manuel"  || name == "Sabrina"   {
+        return true
+    } else {
+        return false
+    }
+}
+greeting3(name: "Manuel")
